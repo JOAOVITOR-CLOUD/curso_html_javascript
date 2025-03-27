@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipular DOM</title>
+</head>
+<body>
+  
+    <h2>Indentificar</h2>
+    <input type="text" name="nome" id="nome" />
+    <input type="number" ano="ano" id="ano" />
+    <button onclick="mostrar()">Mostrar</button>
+
+      <h3 id="resposta"></h3>
+
+      <script>
+
+        const hoje = new Date()
+        
+        console.log('****',hoje.getFullYear())
+        
+        function mostrar () {
+              var nome = document.getElementById("nome").value
+              var ano = document.getElementById("ano").value
+              var idade = hoje.getFullYear()- ano
+              document.getElementById('resposta').innerHTML = 'Olá,'+ nome +
+                " sua ideda é de "+idade
+                 
+        }
+      
+      </script>
+</body>
+</html>

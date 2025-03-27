@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calcular média</title>
+    <title>Calcular Media</title>
 </head>
 <body>
     <script>
-    var nota1 = parseFloat(promp('Informe a primeira nota?'))
-    var nota2 = parseFloat(prompt('Informe a primeira nota?'))
-    var nota3 = parseFloat(prompt('Informe a primeira nota?'))
-    
-    var media =(nota1 + nota2 + nota3) / 3
-    if (media >= 7) { 
-        alert ( 'Aluno aprovado com média'+media)
-    }else {
+        var nota1 = parseFloat(prompt('Informe a primeira nota'))
+        var nota2 = parseFloat(prompt('Informe a segunda nota'))
+        var nota3 = parseFloat(prompt('informe a terceira nota'))
 
-        alert('Aluno repovado com média'+media)
-    }
+        var media = (nota1 + nota2 +nota3) / 3
+        if (media >=7) {
+            alert('Aluno aprovado com média '+media)
+        }else {
+            alert('Aluno reprovado com média '+media)
+        }
     </script>
+    
 </body>
 </html>
